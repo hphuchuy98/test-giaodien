@@ -1,8 +1,6 @@
 .content {
-    min-height: 100%;
-    position: relative;
+    height: calc(100vh - 100px);
     max-width: 480px;
-    height: auto;
     margin: 0 auto;
 }
 
