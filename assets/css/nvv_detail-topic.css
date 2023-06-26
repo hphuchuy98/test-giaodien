@@ -115,7 +115,7 @@
 .button-topic {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: right;
     margin-top: 4px;
 }
 
