@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 5px;
 }
 
 .header-item {
@@ -40,6 +41,7 @@
 
 .head-icon img {
     height: 100%;
+    filter: invert(56%) sepia(25%) saturate(0%) hue-rotate(265deg) brightness(94%) contrast(92%);
 }
 
 .head-username {
@@ -76,6 +78,10 @@
     padding: 0px 5px;
 }
 
+.search-icon img {
+    filter: invert(56%) sepia(25%) saturate(0%) hue-rotate(265deg) brightness(94%) contrast(92%);
+}
+
 .search-input {
     display: flex;
     align-items: center;
@@ -98,15 +104,12 @@
      color: #acacac;
 }
 
+/* Container */
 .container {
     min-height: 100vh;
     background-color: #f1f1f1;
 }
 
-/* Container */
-.container {
-
-}
 
 .scroller-container {
     overflow: hidden;
@@ -157,7 +160,7 @@
 }
 
 .topic-container {
-    /* padding: 0 10px; */
+    padding: 0 5px;
     margin-top: 20px;
 }
 
