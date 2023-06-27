@@ -129,3 +129,8 @@
     background-color: #4dc9ff;
     color: var(--color-white);
 }
+
+.btn-learn a {
+    text-decoration: none;
+    color: var(--color-white);
+}
