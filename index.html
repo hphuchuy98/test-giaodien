@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nghe và viết - detail topic</title>
+    <title>Topic - Nghe và viết</title>
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="./assets/css/nvv_topic-s2.css">
     <link rel="stylesheet" href="./assets/css/nvv_base.css">
-    <link rel="stylesheet" href="./assets/css/nvv_detail-topic.css">
 
     <script src="https://kit.fontawesome.com/88caf8a6d8.js" crossorigin="anonymous"></script> 
 </head>
@@ -16,71 +16,281 @@
     <div class="wrapper">
         <!-- header -->
         <div class="header">
-            <div class="header-bav">
-                <div class="header-icon">
-                    <img class="icon-return" src="./assets/images/icon-svg/arrow-left.svg" alt="">
+            <div class="header-bar">
+                <div class="header-item">
+                    <div class="menu-bar">
+                        <img class="img-icon" src="./assets/images/icon-svg/menu-bar.svg" alt="icon-menu">
+                    </div>
+                    <div class="head-logo">
+                        <a href="#"><img class="img-logo" src="./assets/images/logo-nvv.png" alt="img-logo"></a>
+                    </div>
                 </div>
-                <div class="header-title">
-                    <h2><span class="title">Ocean</span></h2>
+                <div class="header-item">
+                    <div class="head-icon">
+                        <img class="" src="./assets/images/icon-svg/icon-bell.png" alt="icon-bell">
+                    </div>
+                    <div class="head-username">
+                        <img class="img-avatar" src="./assets/images/icon-svg/avatar.svg" alt="avata">
+                    </div>
+                </div>
+            </div>
+            <div class="header-search">
+                <div class="search">
+                    <div class="search-icon">
+                        <img src="./assets/images/icon-svg/search.svg" alt="search">
+                    </div>
+                    <div class="search-input">
+                        <input class="input-search" type="text" placeholder="Search your destination">
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- container -->
         <div class="container">
-            <div class="container-banner">
-                <div class="image-banner">
-                    <img src="https://cdn.dribbble.com/users/59947/screenshots/1835728/dude_muti.gif" alt="">
+            <!-- horizontal media scroller  -->
+            <div class="scroller-container">
+                <div class="scroller">
+                    <div class="items img-topic">
+                        <a class="img-element" href="#"><img class="img-element" src="./assets/images/5342372.jpg" alt="img 1"></a>
+                        <a class="img-element" href="#"><img class="img-element" src="https://images.twinkl.co.uk/tw1n/image/private/t_630_eco/image_repo/2b/d3/us-t-2548663-transportation-display-banner-english_ver_3.jpg" alt="img 2"></a>
+                        <a class="img-element" href="#"><img class="img-element" src="./assets/images/7809915.jpg" alt="img 3"></a>
+                        <a class="img-element" href="#"><img class="img-element" src="./assets/images/7844751.jpg" alt="img 4"></a>
+                        <a class="img-element" href="#"><img class="img-element" src="https://cdnstepup.r.worldssl.net/wp-content/uploads/2019/12/11h.png" alt="img 5"></a>
+                    </div>
                 </div>
             </div>
-            <div class="container-items">
-                <!-- ocean 1 -->
-                <div class="container-intro">
-                    <div class="intro-img">
-                        <img class="image-topic" src="./assets/images/5342372.jpg" alt="">
-                    </div>
-                    <div class="description-topic">
-                        <div class="intro-text">
-                            <div class="title-name">
-                                <h3><span>Các loài cá đại dương</span></h3>
-                            </div>
-                            <div class="description-text">
-                                <p>Có hơn 100 từ vựng về các loại cá trên thế giới.</p>
-                            </div>
+
+            <!-- menu topic -->
+            <div class="topic-container">
+                <div class="topic">
+                    <!-- list topic -->
+                    <!-- topic 1 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/menu.svg" alt="icon-topic">
                         </div>
-                        <div class="button-topic">
-                            <button class="btn-learn">
-                                HỌC NGAY
-                            </button>
+                        <div class="topic-name">
+                            <h4><span>show all</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 2 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/icon-sport.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>sport</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 3 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/crab-icon.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>ocean</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 4 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/vegetable.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>vegetable</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 5 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/shirt.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>clothes</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 6 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/vehicle.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>vehicle</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 7 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/weather.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>weather</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 8 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/pizza.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>food</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 9 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/festival.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>festival</span></h4>
+                        </div>
+                    </div>
+
+                    <!-- topic 10 -->
+                    <div class="topic-items">
+                        <div class="topic-icon">
+                            <img class="icons" src="./assets/images/icon-svg/aimal.svg" alt="icon-topic">
+                        </div>
+                        <div class="topic-name">
+                            <h4><span>animal</span></h4>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- ocean 2 -->
-                <div class="container-intro">
-                    <div class="intro-img">
-                        <img class="image-topic" src="./assets/images/7150471.jpg" alt="">
-                    </div>
-                    <div class="description-topic">
-                        <div class="intro-text">
-                            <div class="title-name">
-                                <h3><span>Sinh vật sống biển sâu</span></h3>
-                            </div>
-                            <div class="description-text">
-                                <p>Từ vựng về các loại sinh vật sống ở vùng biển sâu.</p>
-                            </div>
+            <!-- Top topic -->
+            <div class="ratings-container">
+                <div class="top-topic">
+                    <div class="top-title">
+                        <div class="text-title">
+                            <h3><span>Top listen</span></h3>
                         </div>
-                        <div class="button-topic">
-                            <button class="btn-learn">
-                                HỌC NGAY
-                            </button>
+                        <div class="text-title">
+                            <a class="link-more" href="#"><span>more</span></a>
                         </div>
                     </div>
-                </div>                
+                    <div class="top-list">
+                        <!-- list topic -->
+                        <!-- top 1 -->
+                        <div class="top-list-items">
+                                <div class="bg-top">
+                                    <div class="image-topic-list">
+                                        <img class="top-list_image" src="https://cf.shopee.vn/file/39d8c7c7ba7478f83177acc9fef84225" alt="">
+                                    </div>
+                                    <div class="description-topic-list">
+                                        <div class="top-list_text">
+                                            <div class="top-list_name">
+                                                <h4><span>Từ vựng tiếng Anh 3</span></h4>
+                                            </div>
+                                            <div class="top-list_desc">
+                                                <p>Công ty phát hành: NXB Giáo Dục Việt Nam, NXB: NXB Giáo dục Việt Nam, </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="top-list_button">
+                                            <div class="top-list_view">
+                                                <div class="top-list_icon">
+                                                    <img class="top-list_image-product" src="./assets/images/icon-svg/view.svg" alt="">
+                                                </div>
+                                                <div class="top-list_number-view">
+                                                    <span>831 lượt xem</span>
+                                                </div>
+                                            </div>
+                                            <div class="top-list_btn">
+                                                <button>
+                                                    XEM NGAY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+
+                        <!-- top 2 -->
+                        <div class="top-list-items">
+                            <div class="bg-top">
+                                <div class="image-topic-list">
+                                    <img class="top-list_image" src="https://sciencevietnam.com/wp-content/uploads/2019/02/sach-1200-tu-tieng-anh-thong-dung.gif" alt="">
+                                </div>
+                                <div class="description-topic-list">
+                                    <div class="top-list_text">
+                                        <div class="top-list_name">
+                                            <h4><span>Từ vựng tiếng Anh 3</span></h4>
+                                        </div>
+                                        <div class="top-list_desc">
+                                            <p>Công ty phát hành: NXB Giáo Dục Việt Nam, NXB: NXB Giáo dục Việt Nam, </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="top-list_button">
+                                        <div class="top-list_view">
+                                            <div class="top-list_icon">
+                                                <img class="top-list_image-product" src="./assets/images/icon-svg/view.svg" alt="">
+                                            </div>
+                                            <div class="top-list_number-view">
+                                                <span>831 lượt xem</span>
+                                            </div>
+                                        </div>
+                                        <div class="top-list_btn">
+                                            <button>
+                                                XEM NGAY
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- top 3 -->
+                        <div class="top-list-items">
+                            <div class="bg-top">
+                                <div class="image-topic-list">
+                                    <img class="top-list_image" src="https://salt.tikicdn.com/cache/w1200/ts/product/34/b8/76/bbc0ecd467593e24a4711ed67e98b173.jpg" alt="">
+                                </div>
+                                <div class="description-topic-list">
+                                    <div class="top-list_text">
+                                        <div class="top-list_name">
+                                            <h4><span>Từ vựng tiếng Anh 3</span></h4>
+                                        </div>
+                                        <div class="top-list_desc">
+                                            <p>Công ty phát hành: NXB Giáo Dục Việt Nam, NXB: NXB Giáo dục Việt Nam, </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="top-list_button">
+                                        <div class="top-list_view">
+                                            <div class="top-list_icon">
+                                                <img class="top-list_image-product" src="./assets/images/icon-svg/view.svg" alt="">
+                                            </div>
+                                            <div class="top-list_number-view">
+                                                <span>831 lượt xem</span>
+                                            </div>
+                                        </div>
+                                        <div class="top-list_btn">
+                                            <button>
+                                                XEM NGAY
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>                        
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
-
-    
+    </div>   
 </body>
 </html>

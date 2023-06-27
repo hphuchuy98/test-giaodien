@@ -116,7 +116,8 @@
     width: 100%;
     display: flex;
     justify-content: right;
-    margin-top: 4px;
+    padding-top: 4px;
+    padding-left: 10px;
 }
 
 .btn-learn {
