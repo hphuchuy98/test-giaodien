@@ -25,9 +25,10 @@ body {
 
 
 .wrapper {
-    min-height: 100vh;
     position: relative;
-    max-width: 480px;
+    width: 480px;
     height: auto;
+    min-height: 100vh;
+    max-width: 100%;
     margin: 0 auto;
 }

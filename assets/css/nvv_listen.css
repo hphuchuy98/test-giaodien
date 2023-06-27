@@ -151,6 +151,10 @@
     display: flex;
 }
 
+.progress-number .space {
+    padding: 0 5px;
+}
+
 .progress-icon {
 
 }

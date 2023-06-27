@@ -44,7 +44,9 @@
     filter: invert(56%) sepia(25%) saturate(0%) hue-rotate(265deg) brightness(94%) contrast(92%);
 }
 
+/* ------------------------------- AVATAR -------------------------------- */
 .head-username {
+    position: relative;
     height: 40px;
     width: 40px;
     max-height: 100%;
@@ -54,8 +56,45 @@
 .img-avatar {
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%;  
 }
+
+.head-username-box {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: auto;
+    white-space: nowrap;
+    min-height: 50px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    transition: all .3s;
+
+}
+
+.username-box_list {
+    padding: 10px 0px;
+}
+
+.username-box_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.username-box_link {
+    text-decoration: none;
+    padding: 4px 20px;
+}
+
+.opacity-1 {
+    opacity: 1 !important;
+    transition: all .3s;
+}
+
+/* --------------------------- X X X -------------------------------- */
+
 
 .header-search {
     margin-top: 20px;
@@ -330,4 +369,101 @@
     border: transparent;
     padding: 8px;
     border-radius: 4px;
+    font-size: 16px;
+}
+
+
+/* -----------------------------------Navbar Menu ----------------------------- */
+
+/* Show menu */
+.header-navbar-section {
+    position: fixed;
+    width: 480px;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: transparent;
+    top: 0;
+    left: -100%;
+    transition: all 0.4s;
+    z-index: 2;
+
+}
+
+.header-navbar-menu {
+    position: absolute;
+    width: 280px;
+    height: 100%;
+    background-color: var(--color-white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 9;
+}
+
+.navbar-menu_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+
+}
+
+.navbar-menu_logo {
+    width: 200px;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.logo-navbar {
+    width: 100%;
+}
+
+.navbar-menu_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu_item {
+    padding: 20px 0px;
+}
+
+.navbar-menu_item span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #087daf;
+    
+}
+
+.navbar-menu_link {
+    text-decoration: none;
+}
+
+/* Opacity */
+.header-background {
+    position: fixed;
+    width: 480px;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #8b8b8b6e;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+
+
+/* ----------------------------x x x --------------------------------------- */
+.show-navbar {
+    display: block;
+}
+
+.transition {
+    left: 0;
+    transition: all 0.4s;
 }
