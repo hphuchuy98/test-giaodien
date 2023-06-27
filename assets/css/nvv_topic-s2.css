@@ -66,16 +66,23 @@
     width: auto;
     white-space: nowrap;
     min-height: 50px;
-    background-color: var(--color-white);
+    background-color: #97daf7;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    opacity: 0;
     transition: all .3s;
+    box-sizing: border-box;
+    padding: 8px;
+    transition: all .4s;
 
+    display: none;
 }
 
 .username-box_list {
     padding: 10px 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    box-sizing: border-box;
 }
 
 .username-box_item {
@@ -86,11 +93,34 @@
 .username-box_link {
     text-decoration: none;
     padding: 4px 20px;
+    color: #087daf;
+    font-weight: 600;
 }
 
-.opacity-1 {
-    opacity: 1 !important;
-    transition: all .3s;
+.head-username:hover .head-username-box{
+    display: block !important;
+    transition: all .4s;
+}
+
+.head-username-box::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 6px;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 20px solid #97daf7;
+    /* background-color: palegreen; */
+    
+}
+
+.username-box_decor {
+    position: absolute;
+    width: 40px;
+    bottom: -4px;
+    right: -7px;
 }
 
 /* --------------------------- X X X -------------------------------- */

@@ -1,5 +1,5 @@
 .content {
-    height: calc(100vh );
+    height: calc(100vh);
     max-width: 480px;
     margin: 0 auto;
 }
@@ -34,6 +34,7 @@
 .bg-container {
     background-color: var(--color-white);
     width: 100%;
+    height: auto;
     box-sizing: border-box;
     border-radius: 10px;
 }
