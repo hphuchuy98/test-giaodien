@@ -1,5 +1,5 @@
 .content {
-    height: calc(100vh - 100px);
+    height: calc(100vh );
     max-width: 480px;
     margin: 0 auto;
 }
