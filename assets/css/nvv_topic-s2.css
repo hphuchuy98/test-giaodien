@@ -187,7 +187,7 @@
     
     padding: 0 10px 10px 10px;
     background-color: var(--color-white);
-    z-index: 3;
+    z-index: 1;
 }
 
 .scroller {
@@ -429,7 +429,7 @@
     height: 100%;
     background-color: var(--color-white);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    z-index: 9;
+    z-index: 4;
 }
 
 .navbar-menu_container {
