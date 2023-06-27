@@ -34,7 +34,6 @@
 .bg-container {
     background-color: var(--color-white);
     width: 100%;
-    min-height: 450px;
     box-sizing: border-box;
     border-radius: 10px;
 }
