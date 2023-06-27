@@ -27,7 +27,27 @@
                 </div>
                 <div class="header-item">
                     <div class="head-icon">
-                        <img class="" src="./assets/images/icon-svg/icon-bell.png" alt="icon-bell">
+                        <img class="bell-icon" src="./assets/images/icon-svg/icon-bell.png" alt="icon-bell">
+
+                        <!--test check Notification -->
+                        <div id="notifi" class="head-icon-box" onchange="checkNotifi()">
+                            <div id="hav-notifi" value="true" class="icon-box_list">
+                                <div class="icon-box_item">
+                                    <span> 😒 Bạn đã bỏ lỡ topic hay này!!</span>
+                                </div>
+                                <div class="icon-box_item">
+                                    <span> 😒 Bạn đã bỏ lỡ topic hay này!!</span>
+                                </div>
+                                <div class="icon-box_item">
+                                    <span> 😒 Bạn đã bỏ lỡ topic hay này!!</span>
+                                </div>
+                            </div>
+                            <div id="not-notifi" value="false" class="icon-box_list-icon">
+                                <div class="icon-box_image">
+                                    <img class="box_image" src="./assets/images/icon-svg/notification.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="head-username">
                         <img class="img-avatar" src="./assets/images/icon-svg/avatar.svg" alt="avata">
@@ -37,7 +57,7 @@
                             <div class="username-box_list">
                                 <div class="username-box_item">
                                     <!-- <a class="username-box_link" href="#"><span>Thông tin cá nhân</span></a> -->
-                                    <a class="username-box_link" href="#"><span>Đăng Nhập</span></a>
+                                    <a class="username-box_link" href="./nvv_login.html"><span>Đăng Nhập</span></a>
                                     <a class="username-box_link" href="#"><span>Đăng Ký</span></a>
                                 </div>
                                 <div class="username-box_decor">
@@ -337,7 +357,7 @@
                 </div>
                 <div class="navbar-menu_list">
                     <div class="navbar-menu_item">
-                        <a class="navbar-menu_link" href="#"><span>Đăng nhập</span></a>
+                        <a class="navbar-menu_link" href="./nvv_login.html"><span>Đăng nhập</span></a>
                     </div>
                     <div class="navbar-menu_item">
                         <a class="navbar-menu_link" href="#"><span>Đăng ký</span></a>
@@ -363,6 +383,6 @@
 <!-- --------------------------------------------------------------------------------- -->
     </div>
     <script src="./js/show-navbar-menu.js"></script>
-    <script src="./js/show-box-avatar.js"></script>
+    <script src="./js/check-notifi.js"></script>
 </body>
 </html>

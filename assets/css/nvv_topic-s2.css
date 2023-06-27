@@ -33,16 +33,87 @@
     height: 100%;
 }
 
+/* ------------------------------ Notification --------------------------- */
 .head-icon {
+    position: relative;
     height: 30px;
     max-height: 100%;
     padding-right: 15px;
 }
 
-.head-icon img {
+.bell-icon {
     height: 100%;
     filter: invert(56%) sepia(25%) saturate(0%) hue-rotate(265deg) brightness(94%) contrast(92%);
+} 
+
+.head-icon-box {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: auto;
+    white-space: nowrap;
+    background-color: #97daf7;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+    animation: fadeIn ease .4s;
+    z-index: 7;
+
+    display: none;
 }
+
+.head-icon-box::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 17px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #97daf7;
+}
+
+.head-icon:hover .head-icon-box {
+    /* display: block !important; */
+}
+
+.icon-box_list {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    padding: 5px;
+
+    display: none;
+}
+
+
+.icon-box_item{
+    padding: 5px 4px;
+}
+
+.icon-box_list-icon {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    padding: 5px;
+
+    display: none;
+}
+
+.icon-box_image { 
+    width: 50px;
+    max-width: 100%;
+}
+
+.box_image {
+    width: 100%;
+}
+
+
+/* --------------------------- X X X -------------------------------- */
 
 /* ------------------------------- AVATAR -------------------------------- */
 .head-username {
@@ -69,10 +140,9 @@
     background-color: #97daf7;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all .3s;
     box-sizing: border-box;
     padding: 8px;
-    transition: all .4s;
+    animation: fadeIn ease .4s;
     z-index: 7;
 
     display: none;
@@ -100,10 +170,9 @@
 
 .head-username:hover .head-username-box{
     display: block !important;
-    transition: all .4s;
 }
 
-.head-username-box::after {
+.head-username-box::before {
     content: "";
     position: absolute;
     top: -16px;
@@ -113,8 +182,6 @@
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-bottom: 20px solid #97daf7;
-    /* background-color: palegreen; */
-    
 }
 
 .username-box_decor {
@@ -418,7 +485,7 @@
     background-color: transparent;
     top: 0;
     left: -100%;
-    transition: all 0.4s;
+    transition: all 0.6s;
     z-index: 5;
 
 }
@@ -498,5 +565,5 @@
 
 .transition {
     left: 0;
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
