@@ -73,7 +73,8 @@
     box-sizing: border-box;
     padding: 8px;
     transition: all .4s;
-
+    z-index: 7;
+    
     display: none;
 }
 
