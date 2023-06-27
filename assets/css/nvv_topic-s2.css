@@ -419,7 +419,7 @@
     top: 0;
     left: -100%;
     transition: all 0.4s;
-    z-index: 2;
+    z-index: 5;
 
 }
 
@@ -485,7 +485,7 @@
     background-color: #8b8b8b6e;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 4;
     display: none;
 }
 
